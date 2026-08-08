@@ -7,7 +7,6 @@ struct Node
     Node *next;
 };
 
-
 class LinkedList
 {
 private:
@@ -20,7 +19,6 @@ public:
         head = NULL;
     }
 
-
     void createList()
     {
         int n, value;
@@ -28,23 +26,32 @@ public:
         cout << "\nEnter number of nodes : ";
         cin >> n;
 
-        if(n<=0)
+        if(n <= 0)
         {
-            cout<<"Invalid number of nodes.";
+            cout << "Invalid number of nodes.";
             return;
         }
 
-        for(int i=1;i<=n;i++)
+        for(int i = 1; i <= n; i++)
         {
-            cout<<"Enter value "<<i<<" : ";
-            cin>>value;
+            cout << "Enter value " << i << " : ";
+            cin >> value;
 
             insertEnd(value);
         }
 
-        cout<<"\nLinked List Created Successfully.\n";
+        cout << "\nLinked List Created Successfully.\n";
     }
 
+    void insertBeginning(int value)
+    {
+        Node *newNode = new Node;
+
+        newNode->data = value;
+        newNode->next = head;
+
+        head = newNode;
+    }
 
     void insertEnd(int value)
     {
@@ -53,7 +60,7 @@ public:
         newNode->data = value;
         newNode->next = NULL;
 
-        if(head==NULL)
+        if(head == NULL)
         {
             head = newNode;
             return;
@@ -61,9 +68,9 @@ public:
 
         Node *temp = head;
 
-        while(temp->next!=NULL)
+        while(temp->next != NULL)
         {
-            temp=temp->next;
+            temp = temp->next;
         }
 
         temp->next = newNode;
@@ -71,61 +78,61 @@ public:
 
     void deleteNode(int value)
     {
-        if(head==NULL)
+        if(head == NULL)
         {
-            cout<<"\nList is Empty.\n";
+            cout << "\nList is Empty.\n";
             return;
         }
 
-        Node *temp=head;
-        Node *previous=NULL;
+        Node *temp = head;
+        Node *previous = NULL;
 
-        if(head->data==value)
+        if(head->data == value)
         {
-            head=head->next;
+            head = head->next;
             delete temp;
 
-            cout<<"\nNode Deleted.\n";
+            cout << "\nNode Deleted.\n";
             return;
         }
 
-        while(temp!=NULL && temp->data!=value)
+        while(temp != NULL && temp->data != value)
         {
-            previous=temp;
-            temp=temp->next;
+            previous = temp;
+            temp = temp->next;
         }
 
-        if(temp==NULL)
+        if(temp == NULL)
         {
-            cout<<"\nValue Not Found.\n";
+            cout << "\nValue Not Found.\n";
             return;
         }
 
-        previous->next=temp->next;
+        previous->next = temp->next;
         delete temp;
 
-        cout<<"\nNode Deleted Successfully.\n";
+        cout << "\nNode Deleted Successfully.\n";
     }
 
     void display()
     {
-        if(head==NULL)
+        if(head == NULL)
         {
-            cout<<"\nLinked List is Empty.\n";
+            cout << "\nLinked List is Empty.\n";
             return;
         }
 
-        Node *temp=head;
+        Node *temp = head;
 
-        cout<<"\nLinked List : ";
+        cout << "\nLinked List : ";
 
-        while(temp!=NULL)
+        while(temp != NULL)
         {
-            cout<<temp->data<<" -> ";
-            temp=temp->next;
+            cout << temp->data << " -> ";
+            temp = temp->next;
         }
 
-        cout<<"NULL"<<endl;
+        cout << "NULL" << endl;
     }
 };
 
@@ -138,17 +145,18 @@ int main()
 
     do
     {
-        cout<<"\n==============================";
-        cout<<"\n LINKED LIST MENU";
-        cout<<"\n==============================";
-        cout<<"\n1. Create List";
-        cout<<"\n2. Insert Node";
-        cout<<"\n3. Delete Node";
-        cout<<"\n4. Display List";
-        cout<<"\n5. Exit";
+        cout << "\n==============================";
+        cout << "\n       LINKED LIST MENU";
+        cout << "\n==============================";
+        cout << "\n1. Create List";
+        cout << "\n2. Insert Node at Beginning";
+        cout << "\n3. Insert Node at End";
+        cout << "\n4. Delete Node";
+        cout << "\n5. Display List";
+        cout << "\n6. Exit";
 
-        cout<<"\nEnter Choice : ";
-        cin>>choice;
+        cout << "\nEnter Choice : ";
+        cin >> choice;
 
         switch(choice)
         {
@@ -157,34 +165,43 @@ int main()
                 break;
 
             case 2:
-                cout<<"\nEnter value to insert : ";
-                cin>>value;
+                cout << "\nEnter value to insert at beginning : ";
+                cin >> value;
 
-                list.insertEnd(value);
+                list.insertBeginning(value);
 
-                cout<<"\nNode Inserted.";
+                cout << "\nNode Inserted at Beginning.";
                 break;
 
             case 3:
-                cout<<"\nEnter value to delete : ";
-                cin>>value;
+                cout << "\nEnter value to insert at end : ";
+                cin >> value;
+
+                list.insertEnd(value);
+
+                cout << "\nNode Inserted at End.";
+                break;
+
+            case 4:
+                cout << "\nEnter value to delete : ";
+                cin >> value;
 
                 list.deleteNode(value);
                 break;
 
-            case 4:
+            case 5:
                 list.display();
                 break;
 
-            case 5:
-                cout<<"\nProgram Ended.";
+            case 6:
+                cout << "\nProgram Ended.";
                 break;
 
             default:
-                cout<<"\nInvalid Choice.";
+                cout << "\nInvalid Choice.";
         }
 
-    }while(choice!=5);
+    } while(choice != 6);
 
     return 0;
 }
