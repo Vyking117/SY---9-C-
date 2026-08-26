@@ -4,7 +4,7 @@
 
 # Repository Overview
 
-This repository contains C++ practical assignments demonstrating fundamental Data Structures concepts including Stack, Queue, and Linked List operations.
+This repository contains C++ practical assignments demonstrating fundamental Data Structures concepts including Stack, Queue, Linked List, Binary Tree, and Binary Search Tree operations.
 
 The programs are menu-driven and allow users to perform different operations interactively.
 
@@ -97,20 +97,92 @@ A menu-driven Singly Linked List program that demonstrates dynamic memory alloca
 
 ---
 
+# Practical 4 – Binary Tree
+
+## Overview
+
+A menu-driven Binary Tree program that demonstrates recursive tree creation and different tree traversal operations.
+
+## Features
+
+* Create Binary Tree
+* Inorder Traversal
+* Preorder Traversal
+* Postorder Traversal
+* Count Leaf Nodes
+
+## Concepts Used
+
+* Binary Tree
+* Nodes
+* Pointers
+* Dynamic Memory Allocation
+* Classes & Objects
+* Recursion
+* Inorder Traversal
+* Preorder Traversal
+* Postorder Traversal
+* Leaf Nodes
+
+---
+
+# Practical 5 – Binary Search Tree (BST)
+
+## Overview
+
+A menu-driven Binary Search Tree program that demonstrates node insertion and non-recursive tree traversal using stacks.
+
+## Features
+
+* Insert Node
+* Non-Recursive Inorder Traversal
+* Non-Recursive Preorder Traversal
+* Non-Recursive Postorder Traversal
+* Count Total Nodes
+* Find Smallest Value
+* Find Largest Value
+* Find Tree Height
+* Display Tree Statistics
+
+## Concepts Used
+
+* Binary Search Tree
+* Nodes
+* Pointers
+* Dynamic Memory Allocation
+* Classes & Objects
+* Stack
+* Non-Recursive Traversal
+* Inorder Traversal
+* Preorder Traversal
+* Postorder Traversal
+* BST Insertion
+* Minimum & Maximum
+* Tree Height
+* Node Counting
+
+---
+
 # Data Structures Concepts Covered
 
 * Stack
 * Queue
 * Linked List
+* Binary Tree
+* Binary Search Tree
 * Arrays
 * Pointers
 * Dynamic Memory Allocation
+* Recursion
+* Non-Recursive Traversal
 * LIFO
 * FIFO
 * Push & Pop
 * Enqueue & Dequeue
 * Insertion & Deletion
 * Traversal
+* Leaf Node Counting
+* Tree Height
 * Overflow & Underflow
 
 ---
