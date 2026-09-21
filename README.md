@@ -4,7 +4,7 @@
 
 # Repository Overview
 
-This repository contains C++ practical assignments demonstrating fundamental Data Structures concepts including Stack, Queue, Linked List, Binary Tree, and Binary Search Tree operations.
+This repository contains C++ practical assignments demonstrating fundamental Data Structures concepts including Stack, Queue, Linked List, Binary Tree, Binary Search Tree, and Graph operations.
 
 The programs are menu-driven and allow users to perform different operations interactively.
 
@@ -163,6 +163,38 @@ A menu-driven Binary Search Tree program that demonstrates node insertion and no
 
 ---
 
+# Practical 6 – Graph Implementation
+
+## Overview
+
+A menu-driven Graph program that demonstrates graph representation using an adjacency matrix and graph traversal using Depth First Search (DFS) and Breadth First Search (BFS).
+
+## Features
+
+* Create Graph
+* Display Graph using Adjacency Matrix
+* Depth First Search (DFS) Traversal
+* Breadth First Search (BFS) Traversal
+* Support for Undirected Graph
+* Visited Node Tracking
+
+## Concepts Used
+
+* Graph Data Structure
+* Adjacency Matrix
+* Arrays
+* Classes & Objects
+* Pointers
+* Depth First Search (DFS)
+* Breadth First Search (BFS)
+* Recursion
+* Queue
+* Graph Traversal
+* Visited Nodes
+* Undirected Graph
+
+---
+
 # Data Structures Concepts Covered
 
 * Stack
@@ -170,7 +202,9 @@ A menu-driven Binary Search Tree program that demonstrates node insertion and no
 * Linked List
 * Binary Tree
 * Binary Search Tree
+* Graph
 * Arrays
+* Adjacency Matrix
 * Pointers
 * Dynamic Memory Allocation
 * Recursion
@@ -181,8 +215,11 @@ A menu-driven Binary Search Tree program that demonstrates node insertion and no
 * Enqueue & Dequeue
 * Insertion & Deletion
 * Traversal
+* DFS
+* BFS
 * Leaf Node Counting
 * Tree Height
+* Node Counting
 * Overflow & Underflow
 
 ---
