@@ -163,35 +163,42 @@ A menu-driven Binary Search Tree program that demonstrates node insertion and no
 
 ---
 
-# Practical 6 – Graph Implementation
+# Practical 6 – Graph Using Adjacency List
 
 ## Overview
 
-A menu-driven Graph program that demonstrates graph representation using an adjacency matrix and graph traversal using Depth First Search (DFS) and Breadth First Search (BFS).
+A menu-driven Graph program that demonstrates graph representation using an adjacency list and graph traversal using Breadth First Search (BFS).
 
 ## Features
 
 * Create Graph
-* Display Graph using Adjacency Matrix
-* Depth First Search (DFS) Traversal
+* Display Graph using Adjacency List
 * Breadth First Search (BFS) Traversal
 * Support for Undirected Graph
 * Visited Node Tracking
+* User-defined Starting Vertex
+* Menu-driven Operations
 
 ## Concepts Used
 
 * Graph Data Structure
-* Adjacency Matrix
+* Adjacency List
+* Vectors
 * Arrays
 * Classes & Objects
-* Pointers
-* Depth First Search (DFS)
-* Breadth First Search (BFS)
-* Recursion
 * Queue
+* Breadth First Search (BFS)
 * Graph Traversal
 * Visited Nodes
 * Undirected Graph
+
+## Working
+
+The graph is represented using an adjacency list. Each vertex contains a list of vertices connected to it.
+
+For an undirected graph, every edge is stored in both directions.
+
+BFS starts from a selected vertex and uses a queue to visit connected vertices level by level. A visited array is used to make sure that a vertex is not visited more than once.
 
 ---
 
@@ -204,7 +211,8 @@ A menu-driven Graph program that demonstrates graph representation using an adja
 * Binary Search Tree
 * Graph
 * Arrays
-* Adjacency Matrix
+* Adjacency List
+* Vectors
 * Pointers
 * Dynamic Memory Allocation
 * Recursion
@@ -215,12 +223,12 @@ A menu-driven Graph program that demonstrates graph representation using an adja
 * Enqueue & Dequeue
 * Insertion & Deletion
 * Traversal
-* DFS
 * BFS
 * Leaf Node Counting
 * Tree Height
 * Node Counting
 * Overflow & Underflow
+* Visited Node Tracking
 
 ---
 
@@ -230,3 +238,5 @@ A menu-driven Graph program that demonstrates graph representation using an adja
 * Standard C++ Libraries
 * Object-Oriented Programming
 * Data Structures
+* STL Vector
+* STL Queue
